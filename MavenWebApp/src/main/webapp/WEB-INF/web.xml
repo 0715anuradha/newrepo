@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>CollegeDetails</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ReadCollegeServlet</display-name>
+    <servlet-name>ReadCollegeServlet</servlet-name>
+    <servlet-class>com.lti.servlets.ReadCollegeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadCollegeServlet</servlet-name>
+    <url-pattern>/read.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteCollegeServlet</display-name>
+    <servlet-name>DeleteCollegeServlet</servlet-name>
+    <servlet-class>com.lti.servlets.DeleteCollegeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCollegeServlet</servlet-name>
+    <url-pattern>/delete.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddCollegeServlet</display-name>
+    <servlet-name>AddCollegeServlet</servlet-name>
+    <servlet-class>com.lti.servlets.AddCollegeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCollegeServlet</servlet-name>
+    <url-pattern>/add.do</url-pattern>
+  </servlet-mapping>
+</web-app>
